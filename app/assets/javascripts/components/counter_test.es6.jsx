@@ -16,5 +16,10 @@ var incrementCounter = (list, index) => {
     list[index] + 1,
     ...list.slice(index+1)
   ]
+}
 
+var toggleTodo = (todo) => {
+  return Object.assign({}, todo, {
+    completed: !todo.completed
+  })
 }

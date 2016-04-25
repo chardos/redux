@@ -33,4 +33,21 @@ describe("Counter", function() {
 
     expect( incrementCounter(listBefore, 2) ).toEqual(listAfter);
   });
+
+  it("should be able to toggle a todo", function() {
+    var todoBefore={
+      id: 0,
+      text: 'Learn redux',
+      completed: false
+    }
+    var todoAfter={
+      id: 0,
+      text: 'Learn redux',
+      completed: true
+    }
+
+    Object.freeze(todoBefore)
+
+    expect( toggleTodo(todoBefore) ).toEqual(todoAfter);
+  });
 });
