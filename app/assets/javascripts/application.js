@@ -15,4 +15,4 @@
 //= require redux
 //= require react
 //= require react_ujs
-//= require expect
+//= require components.js
