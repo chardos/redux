@@ -1,11 +1,4 @@
 describe("Counter", function() {
-  // var player;
-  // var song;
-  //
-  // beforeEach(function() {
-  //   player = new Player();
-  //   song = new Song();
-  // });
 
   it("should be able to add a new counter", function() {
     var listBefore=[];
